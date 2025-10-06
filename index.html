@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Ibra's Web</title>
+    <link rel="stylesheet" href="styleIndex.css">
+
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#2196f3">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="container">
+        <h1>Welcome to my personal website!</h1>
+        <p>
+            Halaman ini dibuat sebagai bagian dari tugas mata kuliah Desain Web, 
+            di mana saya berkesempatan untuk menerapkan dasar-dasar perancangan dan pengembangan web.
+            Melalui proyek ini, saya berupaya untuk mengasah kemampuan saya dan mendalami minat saya di bidang Desain Web. 
+        </p>
+        <p class="highlight-box">
+            
+        Terima kasih telah mengunjungi website ini! Website ini sudah menjadi Progressive Web App (PWA) Anda bisa mengaksesnya secara offline dan menambahkannya ke layar utama perangkat Anda. Klik tombol di pojok kanan bawah untuk menginstall aplikasi.
+</p>
+    </div>
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('service-worker.js')
+                .then(reg => console.log('✅ Service Worker terdaftar:', reg))
+                .catch(err => console.log('❌ Gagal daftar Service Worker:', err));
+         }
+    </script>
+<button class="install-btn" id="installButton">Install Aplikasi</button>
+</body>
+</html>

@@ -1,0 +1,109 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Roboto, sans-serif;
+  background: #f6f7f7 url("gambar.jpg") no-repeat center center fixed;
+  background-size: cover;
+  color: hsl(202, 80%, 66%); 
+}
+
+/* Navigasi */
+nav {
+    background: linear-gradient(135deg, #ffffff, #1894e6, #ffffff);
+    padding: 20px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+nav a:hover {
+    color: rgb(62, 12, 229);
+}
+
+/* Container utama */
+.container {
+  max-width: 700px;
+  margin: 100px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+/* Judul dan paragraf */
+h1 {
+  font-size: 32px;
+  color: #2196f3;
+  margin-top: -10px;
+  margin-bottom: 16px;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 8px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+.install-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #2196f3;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+  animation: slideUp 0.6s ease-out;
+  z-index: 9999;
+}
+
+.install-btn:hover {
+  background: linear-gradient(135deg, #ffffff, #b0ddfa, #fcfcfc);
+  color: #2196f3;
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(80px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+
+/* Responsif untuk mobile */
+@media (max-width: 600px) {
+  .container {
+    margin: 20px;
+    padding: 16px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 15px;
+  }
+  
+}

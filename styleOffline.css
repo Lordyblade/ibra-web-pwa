@@ -1,0 +1,41 @@
+/* styleOffline.css */
+body {
+  font-family: 'Segoe UI', Roboto, sans-serif;
+  background: linear-gradient(135deg, #dbe9f6, #ffffff);
+  color: #1a73e8;
+  text-align: center;
+  padding: 50px;
+  margin: 0;
+}
+
+.container {
+  max-width: 500px;
+  margin: 100px auto;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.offline-icon {
+  width: 96px;
+  height: 96px;
+  margin-bottom: 20px;
+  animation: float 2s ease-in-out infinite;
+}
+
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+  100% { transform: translateY(0px); }
+}
+
+h1 {
+  color: #1a73e8;
+  font-size: 28px;
+}
+
+p {
+  color: #555;
+  font-size: 16px;
+}

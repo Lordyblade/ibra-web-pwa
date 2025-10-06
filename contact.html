@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Ibra's Web</title>
+    <link rel="stylesheet" href="styleContact.css">
+
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#2196f3">
+    <script defer src="script.js"></script>
+</head>
+<script>
+function showPopup() {
+    document.getElementById("popup").style.display = "flex"; }
+
+function closePopup() {
+    document.getElementById("popup").style.display = "none"; }
+
+</script>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="container">
+        <h1>Personal Contact</h1>
+        <p>Hubungi saya melalui informasi berikut:</p>
+        <ul>
+            <li>
+                Email:
+                <a href="mailto:ciburakatoprak@gmail.com">ciburakatoprak@gmail.com</a>
+            </li>
+            <li>
+                Telepon: 0822-6806-7766
+            </li>
+            <li>
+                Instagram:
+                <a href="https://instagram.com/ibraahimousa" target="_blank">@ibraahimousa</a>
+            </li>
+        </ul>
+
+        <h2>Kirim Pesan</h2>
+        <form onsubmit="showPopup(); return false;">
+    <label for="nama">Nama:</label>
+    <input type="text" id="nama" name="nama" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="kategori">Kategori Pesan:</label>
+    <select id="kategori" name="kategori" required>
+        <option value="">-- Pilih Kategori --</option>
+        <option value="pertanyaan">Pertanyaan</option>
+        <option value="saran">Saran</option>
+        <option value="masalah">Masalah</option>
+    </select>
+
+    <label for="pesan">Pesan:</label>
+    <textarea id="pesan" name="pesan" rows="5" required minlength="10"></textarea>
+
+    <p>Apakah Anda ingin menerima balasan?</p>
+    <input type="radio" id="ya" name="balasan" value="ya" required>
+    <label for="ya">Ya</label>
+    <input type="radio" id="tidak" name="balasan" value="tidak">
+    <label for="tidak">Tidak</label>
+
+    <button type="submit">Kirim</button>
+</form>
+ <p>
+       *Website ini sudah menjadi Progressive Web App (PWA)!. Anda bisa mengaksesnya secara offline dan menambahkannya ke perangkat Anda. Klik tombol di pojok kanan bawah untuk menginstall aplikasi.
+ </p>
+<div id="popup" class="popup">
+    <div class="popup-content">
+        <h2>Pesan Terkirim!</h2>
+        <p>Terima kasih, form Anda berhasil dikirim.</p>
+        <button onclick="closePopup()">OK</button>
+    </div>
+</div>
+
+    </div>
+</body>
+</html>
